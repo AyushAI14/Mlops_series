@@ -13,7 +13,7 @@ class ChatBook:
                         Hello to the welcome page of ChatBook
                         Press 1 to signup
                         Press 2 to signin
-                        Press 3 to write a post
+                        Press 3 to write a posplit 
                         Press 4 to View your post
                         Hit any key to exit
                          """)
