@@ -1,0 +1,15 @@
+1. Class and objects
+    emplayee: ----> class
+        id ----> data/attribute
+        salary ----> data/attribute
+        postition ----> data/attribute
+
+
+        report ------> method/function
+        presentation ------> method/function
+    
+    emplayee = ayush ---> objects
+
+
+
+2 . why python is called OOP ?
