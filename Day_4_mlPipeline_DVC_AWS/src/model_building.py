@@ -37,6 +37,27 @@ console_logger.setFormatter(formatter)
 logger.addHandler(fileHandler)
 logger.addHandler(console_logger)
 
+# --------------------------------params----------------------------
+def params_load(param_path:str)->dict:
+    """load params from yaml file"""
+    try:
+        with open(param_path,'r') as f:
+            params=yaml.safe_load(f)
+        logger.debug("params.yaml loaded successfully")
+
+        return params
+    except FileNotFoundError:
+        logger.error('File not found: %s', param_path)
+        raise
+    except yaml.YAMLError as e:
+        logger.error('YAML error: %s', e)
+        raise
+    except Exception as e:
+        logger.error('Unexpected error: %s', e)
+        raise    
+
+
+
 # ---------------------model_building-------------------------
 
 # making function for loading the processing data
@@ -87,12 +108,13 @@ def save_model(model,file_path:str):
 
 def main():
     try:
-        param = {'n_estimator':25,'ramdom_state':2}
+        params = params_load(param_path='params.yaml')['model_building']
+        # param = {'n_estimator':25,'ramdom_state':2}
         train_data = load_data('data/featureData/traindf_tfid.csv')
         X_train = train_data.iloc[:, :-1].values
         y_train = train_data.iloc[:, -1].values
 
-        clf = model_training(X_train,y_train,param)
+        clf = model_training(X_train,y_train,params)
         modelPath = 'models/model.pkl'
         save_model(clf,modelPath)
     except Exception as e:

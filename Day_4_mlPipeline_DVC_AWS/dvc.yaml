@@ -3,8 +3,11 @@ stages:
     cmd: python3 src/data_ingestion.py
     deps:
     - src/data_ingestion.py
+    params:
+    - data_ingestion.test_size
     outs:
     - data/raw
+
   pre_processing:
     cmd: python3 src/pre_processing.py
     deps:
@@ -12,20 +15,28 @@ stages:
     - src/pre_processing.py
     outs:
     - data/process_data
+
   feature_eng:
     cmd: python3 src/feature_eng.py
     deps:
     - data/process_data
     - src/feature_eng.py
+    params:
+    - feature_eng.max_feature
     outs:
     - data/featureData
+
   model_building:
     cmd: python3 src/model_building.py
     deps:
     - data/featureData
     - src/model_building.py
+    params:
+    - model_building.n_estimator
+    - model_building.ramdom_state
     outs:
     - models/model.pkl
+    
   model_evalution:
     cmd: python3 src/model_evalution.py
     deps:
