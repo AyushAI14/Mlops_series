@@ -1,9 +1,9 @@
 data_ingestion:
-  test_size: 0.20
+  test_size: 0.25
 
 feature_eng:
-  max_feature: 50
+  max_feature: 45
 
 model_building:
-  n_estimator: 25
+  n_estimator: 20
   ramdom_state: 2
