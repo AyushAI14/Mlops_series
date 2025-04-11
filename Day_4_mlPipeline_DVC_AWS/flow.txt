@@ -40,8 +40,9 @@ Adding a remote S3 storage to DVC:
 
 
 
-
-
+extra:
+delete you s3 and iam (bill issue)
+adding stages in dvc.yaml using command  : "dvc stage add -n data_ingestion -d src/data_ingestion.py -o data/raw python src/data_ingestion.py"
 
 
 
