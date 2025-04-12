@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/5fd10b9706244c06b529411b221392a4/artifacts
+end_time: 1744460925818
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5fd10b9706244c06b529411b221392a4
+run_name: melodic-snipe-154
+run_uuid: 5fd10b9706244c06b529411b221392a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744460925763
+status: 3
+tags: []
+user_id: ayush

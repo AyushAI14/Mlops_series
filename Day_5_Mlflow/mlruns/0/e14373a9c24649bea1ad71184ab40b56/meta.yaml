@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/e14373a9c24649bea1ad71184ab40b56/artifacts
+end_time: 1744462334522
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e14373a9c24649bea1ad71184ab40b56
+run_name: grandiose-hawk-3
+run_uuid: e14373a9c24649bea1ad71184ab40b56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744462334432
+status: 3
+tags: []
+user_id: ayush

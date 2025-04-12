@@ -1,0 +1,35 @@
+1. Overview about experiments
+2. DVC vs MLops
+3. mlops for datascience
+
+4. code Overview
+
+---------------------------------------------------------
+- install mlflow and test the command mlflow ui and you will get a ui of experiments
+- write a python file and define your model use mlflow to configure logs
+- run the python file and refresh you mlflow ui page and see the experiments 
+- lets log more 
+- you can check mlflow_log_list.txt for possible logs
+- under log_artifacts : confusion_matrix
+- you can try more
+
+
+
+
+----------------------------------------------------------
+- creating experiments
+- using UI = you can create it by clicking on plus icon and the use "mlflow.set_experiment('Name')" this cmd now all you exp will store here 
+
+
+---------------------------------------------------------
+Tags
+mlflow.set_tags({"Author": 'ayush', "Project": "iris Classification"})
+
+# Log the model
+mlflow.sklearn.log_model(rf, "Random-Forest-Model")
+
+
+5. Remote tacking server - dagshub
+- login to dagshub via github
+- making a duplicate file of index.py 
+- make new repo in dagshub and connect you github repo

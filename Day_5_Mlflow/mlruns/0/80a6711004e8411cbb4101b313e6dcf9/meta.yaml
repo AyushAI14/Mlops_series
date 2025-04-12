@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/80a6711004e8411cbb4101b313e6dcf9/artifacts
+end_time: 1744462702184
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 80a6711004e8411cbb4101b313e6dcf9
+run_name: painted-dolphin-199
+run_uuid: 80a6711004e8411cbb4101b313e6dcf9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744462702083
+status: 3
+tags: []
+user_id: ayush

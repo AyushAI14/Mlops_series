@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/994171625570263519/b339b2b555924e9fa3d952b7b15460fe/artifacts
+end_time: 1744469699230
+entry_point_name: ''
+experiment_id: '994171625570263519'
+lifecycle_stage: active
+run_id: b339b2b555924e9fa3d952b7b15460fe
+run_name: marvelous-moth-372
+run_uuid: b339b2b555924e9fa3d952b7b15460fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744469695633
+status: 3
+tags: []
+user_id: ayush
