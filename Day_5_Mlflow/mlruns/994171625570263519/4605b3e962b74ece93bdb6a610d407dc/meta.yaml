@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/994171625570263519/4605b3e962b74ece93bdb6a610d407dc/artifacts
+end_time: 1744483091938
+entry_point_name: ''
+experiment_id: '994171625570263519'
+lifecycle_stage: active
+run_id: 4605b3e962b74ece93bdb6a610d407dc
+run_name: debonair-donkey-338
+run_uuid: 4605b3e962b74ece93bdb6a610d407dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483087759
+status: 3
+tags: []
+user_id: ayush

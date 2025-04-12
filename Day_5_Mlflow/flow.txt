@@ -33,3 +33,13 @@ mlflow.sklearn.log_model(rf, "Random-Forest-Model")
 - login to dagshub via github
 - making a duplicate file of index.py 
 - make new repo in dagshub and connect you github repo
+- pip install dagshub and import it to your file like this : 
+        import dagshub
+        dagshub.init(repo_owner='AyushAI14', repo_name='Mlops_series', mlflow=True)
+        mlflow.set_tracking_uri('https://dagshub.com/AyushAI14/Mlops_series.mlflow')
+- run the file it should run and give you the remote tracking link 
+
+
+6. autolog help you automate all neccessay log used in a ml project you donot need to mention now (remote or local both)
+- mlflow.autolog() # it log more than expected nice
+-  (you can separate do it individually )

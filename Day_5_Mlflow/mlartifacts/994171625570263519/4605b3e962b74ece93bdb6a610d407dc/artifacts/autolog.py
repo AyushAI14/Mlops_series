@@ -6,16 +6,11 @@ from sklearn.metrics import confusion_matrix,accuracy_score,precision_score
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import seaborn as sns
-import mlflow
-
-import dagshub
-dagshub.init(repo_owner='AyushAI14', repo_name='Mlops_series', mlflow=True)
-mlflow.set_tracking_uri('https://dagshub.com/AyushAI14/Mlops_series.mlflow')
 
 #importing mlflow libs
 import mlflow
 import mlflow.sklearn
-# mlflow.set_tracking_uri('http://localhost:5000') #because mlflow is expecting https but artifact receive file so we did this to change tracking url
+mlflow.set_tracking_uri('http://localhost:5000') #because mlflow is expecting https but artifact receive file so we did this to change tracking url
 
 data = load_iris()
 X = data.data
@@ -28,6 +23,7 @@ max_depth = 5
 
 # mentioning my own experiment 
 mlflow.set_experiment('mlops-trial')
+mlflow.autolog()
 
 #mlflow start------------------------
 
@@ -39,11 +35,7 @@ with mlflow.start_run():
     accuracy = accuracy_score(y_test, yp)
     precision = precision_score(y_test, yp, average='macro')  # or 'weighted' based on your goal
 
-    # now mlflow initialization : log_mertic , log_params
-    mlflow.log_metric('accuracy', accuracy)
-    mlflow.log_metric('precision', precision)
-    mlflow.log_param('n_estimators', n_estimators)
-    mlflow.log_param('max_depth', max_depth)
+
 
 
     # intalizing confusion matrix
@@ -55,14 +47,12 @@ with mlflow.start_run():
     plt.savefig('iris_confusion_matrix.png')
 
     # now log artifact with mlflow
-    mlflow.log_artifact('iris_confusion_matrix.png')
     mlflow.log_artifact(__file__) #__file__ : contain the path of current file
 
     #tags
     mlflow.set_tags({"Author": 'ayush', "Project": "iris Classification"})
 
     # Log the model
-    mlflow.sklearn.log_model(rf, "Random-Forest-Model")
 
     print(accuracy)
     print(precision)
