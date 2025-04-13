@@ -1,0 +1,12 @@
+created a index.py where i made a small streamlit app
+
+
+
+-----------------------------
+git action setup
+create a .github folder and workflows sub folder and under this you can define your yaml file 
+creating a yaml file that contains the jobs he need to do 
+
+---------------------------
+_test.py file you define in your yaml file
+define your test in the file
