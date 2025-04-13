@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ayush/Documents/AI/Mlops_series/Day_5_Mlflow/mlruns/429340718808979128/c41dba966fb640d1a5c36a19381d6acc/artifacts
+end_time: 1744514960705
+entry_point_name: ''
+experiment_id: '429340718808979128'
+lifecycle_stage: active
+run_id: c41dba966fb640d1a5c36a19381d6acc
+run_name: bald-steed-174
+run_uuid: c41dba966fb640d1a5c36a19381d6acc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744514953307
+status: 3
+tags: []
+user_id: ayush

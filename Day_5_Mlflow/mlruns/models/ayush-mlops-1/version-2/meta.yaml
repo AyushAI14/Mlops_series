@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1744516098517
+current_stage: None
+description: ''
+last_updated_timestamp: 1744516098517
+name: ayush-mlops-1
+run_id: c41dba966fb640d1a5c36a19381d6acc
+run_link: ''
+source: models:/ayush-mlops-1/1
+status: READY
+status_message: null
+storage_location: file:///home/ayush/Documents/AI/Mlops_series/Day_5_Mlflow/mlruns/429340718808979128/c41dba966fb640d1a5c36a19381d6acc/artifacts/random_forest
+user_id: null
+version: 2

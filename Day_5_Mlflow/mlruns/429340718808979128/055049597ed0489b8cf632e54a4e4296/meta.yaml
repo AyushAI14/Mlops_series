@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ayush/Documents/AI/Mlops_series/Day_5_Mlflow/mlruns/429340718808979128/055049597ed0489b8cf632e54a4e4296/artifacts
+end_time: 1744514957648
+entry_point_name: ''
+experiment_id: '429340718808979128'
+lifecycle_stage: active
+run_id: 055049597ed0489b8cf632e54a4e4296
+run_name: agreeable-gull-407
+run_uuid: 055049597ed0489b8cf632e54a4e4296
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744514957642
+status: 3
+tags: []
+user_id: ayush

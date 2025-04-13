@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ayush/Documents/AI/Mlops_series/Day_5_Mlflow/mlruns/429340718808979128/e72f64086adf40baa4859115f4a0d08b/artifacts
+end_time: 1744514957666
+entry_point_name: ''
+experiment_id: '429340718808979128'
+lifecycle_stage: active
+run_id: e72f64086adf40baa4859115f4a0d08b
+run_name: kindly-grub-301
+run_uuid: e72f64086adf40baa4859115f4a0d08b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744514957658
+status: 3
+tags: []
+user_id: ayush

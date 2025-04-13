@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ayush/Documents/AI/Mlops_series/Day_5_Mlflow/mlruns/429340718808979128/d4137b75c4fb42cca4777ace0535d721/artifacts
+end_time: 1744514957613
+entry_point_name: ''
+experiment_id: '429340718808979128'
+lifecycle_stage: active
+run_id: d4137b75c4fb42cca4777ace0535d721
+run_name: flawless-flea-839
+run_uuid: d4137b75c4fb42cca4777ace0535d721
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744514957607
+status: 3
+tags: []
+user_id: ayush

@@ -43,3 +43,19 @@ mlflow.sklearn.log_model(rf, "Random-Forest-Model")
 6. autolog help you automate all neccessay log used in a ml project you donot need to mention now (remote or local both)
 - mlflow.autolog() # it log more than expected nice
 -  (you can separate do it individually )
+
+7. hypertuning
+- you can set up gridsearchcv and set log for traning/test data , best_model , and more
+- to see all your gridsearchcv result set mlflow.start_run() as parent
+    # log all the child runs
+    for i in range(len(grid_search.cv_results_['params'])):
+
+        with mlflow.start_run(nested=True) as child:
+            mlflow.log_params(grid_search.cv_results_["params"][i])
+            mlflow.log_metric("accuracy", grid_search.cv_results_["mean_test_score"][i])
+- go to ui and you will seen all childs runs under plus icon of yor current exp
+
+
+8. model registry
+registring the model in , dev , staging , production, retire
+- you can register using ui and change their status

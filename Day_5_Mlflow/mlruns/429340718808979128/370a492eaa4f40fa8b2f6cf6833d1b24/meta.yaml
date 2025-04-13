@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ayush/Documents/AI/Mlops_series/Day_5_Mlflow/mlruns/429340718808979128/370a492eaa4f40fa8b2f6cf6833d1b24/artifacts
+end_time: 1744514957605
+entry_point_name: ''
+experiment_id: '429340718808979128'
+lifecycle_stage: active
+run_id: 370a492eaa4f40fa8b2f6cf6833d1b24
+run_name: amusing-frog-492
+run_uuid: 370a492eaa4f40fa8b2f6cf6833d1b24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744514957599
+status: 3
+tags: []
+user_id: ayush
