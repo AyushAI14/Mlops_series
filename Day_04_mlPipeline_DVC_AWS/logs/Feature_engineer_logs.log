@@ -1,0 +1,6 @@
+2025-04-11 13:53:20,222 - Feature_engineer - DEBUG - params.yaml loaded successfully
+2025-04-11 13:53:20,240 - Feature_engineer - DEBUG - Data loaded successfully
+2025-04-11 13:53:20,247 - Feature_engineer - DEBUG - Data loaded successfully
+2025-04-11 13:53:20,408 - Feature_engineer - DEBUG - tfidf applied and data transformed
+2025-04-11 13:53:20,654 - Feature_engineer - DEBUG - Data saved to ./data/featureData/traindf_tfid.csv
+2025-04-11 13:53:20,725 - Feature_engineer - DEBUG - Data saved to ./data/featureData/testdf_tfid.csv

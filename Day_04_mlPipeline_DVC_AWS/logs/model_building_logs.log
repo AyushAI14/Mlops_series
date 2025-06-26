@@ -1,0 +1,5 @@
+2025-04-11 13:53:27,604 - model_building - DEBUG - params.yaml loaded successfully
+2025-04-11 13:53:27,743 - model_building - DEBUG - Data loaded from data/featureData/traindf_tfid.csv  successfully with (3907, 46) shape
+2025-04-11 13:53:27,746 - model_building - DEBUG - random forest intializing
+2025-04-11 13:53:28,000 - model_building - DEBUG - model training is completed
+2025-04-11 13:53:28,003 - model_building - DEBUG - model convertf to pkl and saved in models/model.pkl
