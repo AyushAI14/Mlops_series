@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kbspr
+spec:
+  selector:
+    matchLabels:
+      app: kbspr
+  template:
+    metadata:
+      labels:
+        app: kbspr
+    spec:
+      containers:
+      - name: kbspr
+        image: kbspr:latest
+        imagePullPolicy: Never  # Tell Kubernetes not to pull from a registry
+        # image: ayushaiml14/kbspr:latest    # for cloud
+        resources:
+          limits:
+            memory: "64Mi"
+            cpu: "200m"
+        ports:
+        - containerPort: 5000
+
+--- 
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: kbspr
+spec:
+  selector:
+    app: kbspr
+  ports:
+  - port: 8080
+    targetPort: 5000
+
