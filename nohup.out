@@ -1,0 +1,10 @@
+Gtk-Message: 11:42:00.227: Failed to load module "xapp-gtk3-module"
+Warning: vkCreateInstance: Found no drivers!
+Warning: vkCreateInstance failed with VK_ERROR_INCOMPATIBLE_DRIVER
+    at CheckVkSuccessImpl (../../third_party/dawn/src/dawn/native/vulkan/VulkanError.cpp:106)
+
+*** stack smashing detected ***: terminated
+
+(spotify:7): libnotify-WARNING **: 11:54:44.186: Running in confined mode, using Portal notifications. Some features and hints won't be supported
+libnotify-Message: 11:57:04.283: App Name is not available when using Portal Notifications
+libnotify-Message: 12:03:55.007: App Name is not available when using Portal Notifications
