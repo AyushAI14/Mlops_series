@@ -82,6 +82,10 @@ This repository demonstrates:
    ```  
    Note the ClusterIP and port for `flask-metrics-app`.  
 2. **Edit Prometheus ConfigMap:**  
+   ```bash 
+   kubectl edit configmap prometheus-server -n monitoring
+   ```
+
    Add your Flask app as a scrape target:  
    ```yaml  
    scrape_configs:  
@@ -89,7 +93,7 @@ This repository demonstrates:
        static_configs:  
          - targets: ['<FLASK-APP-IP>:5000']  
    ```  
-3. **Restart Prometheus:**  
+3. **Restart Prometheus:**  10.102.150.165
    ```bash  
    kubectl rollout restart deployment prometheus-server -n monitoring  
    ```  
